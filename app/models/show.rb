@@ -26,3 +26,5 @@ end
 
 def self.shows_by_alphabetical_order 
   self.order(shows: :desc)
+end 
+end
