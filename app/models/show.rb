@@ -5,11 +5,8 @@ class Show < ActiveRecord::Base
   end 
   
   def self.most_popular_show 
-    self.maximum(:name)
+    self.where("rating = ?", highest_rating)
 end 
-popularity is a ranking
-it is associated with rating
-self.where(":rating is ?", highest_rating)
 
 def self.lowest_rating
   self.minimum(:rating)
