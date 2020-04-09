@@ -22,7 +22,7 @@ def self.ratings_sum
 end 
 
 def self.popular_shows
-  self.where("ratings > 2").order(ratings: :desc)
+  self.where("rating > 2").order(ratings: :desc)
 end 
 
 def self.shows_by_alphabetical_order 
